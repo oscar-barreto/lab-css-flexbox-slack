@@ -8,3 +8,291 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+:root {
+    --purple: #540b51;
+    --ivory: #f3eae2;
+    --btn-blue: #4285f4;
+    --title-black: #191817;
+    --p-black:#000000;
+    --p-yellow:#ecb12f;
+    --links-blue:#2e71a6;
+    --links-footer_grey:#454245;
+    --bg-bege: #F4EAE2;
+  }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.nav-bar{
+    background-color: var(--purple);
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar_btn{
+    border: none;
+    background-color: var(--purple);
+    padding: 10px;
+    color: var(--ivory);
+}
+.header{
+    background-color: var(--purple);
+}
+.header h1{
+    color: var(--ivory);
+    font-weight: bold;
+    font-size: 40px;
+}
+.header p {
+    color: var(--ivory);
+}
+.intro-span{
+    color: var(--p-yellow);
+}
+.header-btn_signup{
+    color: var(--purple);
+    background-color: white;
+    border: none;
+    border-radius: 3%;
+}
+.header-btn_google{
+    background-color: var(--btn-blue);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3%;
+}
+.img-google{
+    background-color: var(--ivory);
+    border-radius: 3%;
+}
+.section-company{
+    background-color: var(--bg-bege);
+    text-align: center;
+    padding: 10px;
+}
+.section-company p{
+    padding: 10px;
+    letter-spacing: 0.02cm;
+}
+.container-company{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-connect{
+    background-color: var(--bg-bege);
+}
+.section-connect img{
+    width: 100vw;
+}
+.section-work{
+    background-color: var(--bg-bege);
+}
+.section-connect a, .section-work a {
+    text-decoration: none;
+}
+.section-speed {
+    background-color: var(--bg-bege);
+}
+.section-speed a{
+    text-decoration: none;
+}
+.section-teams {
+    text-align: center;
+    background-color:white;
+}
+.btn-container{
+    margin: 10px 0 30px 0;
+}
+.btn-slack{
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    border-radius: 3%;
+}
+.btn-sales {
+    background-color: white;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: 3%;
+}
+.list-numbers span{
+    color: var(--purple);
+    font-weight:bold;
+    font-size: 45px;
+}
+.section-hq{
+    background-color: var(--purple);
+    color: white;
+}
+.btn-free{
+    background-color: var(--purple);
+    color: white;
+    border: 1px solid white;
+    border-radius: 3%;
+
+}
+.btn-talk{
+    border-radius: 3%;
+    color: var(--purple);
+}
+footer {
+    background-color: white;
+}
+.list-top{
+    font-weight: bold;
+    list-style: none;
+}
+.list-members{
+    list-style: none;
+}
+.list-menu{
+    list-style: none;
+}
+.list-menu_item{
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-bar_list {
+        display: none;
+        visibility: hidden;
+    }
+    .slack-logo{
+        width: 80px;
+        height: 30px;
+    }
+    .header h1{
+        text-align: center;
+        padding: 20px;
+    }
+    .header p {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .header-btn_signup{
+        width: 95vw;
+        margin: 10px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .header-btn_google{
+        width: 95vw;
+        margin: 10px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .img-google{
+        width: 10%;
+        padding: 7px;
+        margin: 20px 70px 20px 5px;
+    }
+    .container-product{
+        width: 390px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .img-product{
+        width:600px;
+        overflow: hidden;
+    }
+    .section-company p{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .brands{
+        width: 110px;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .section-connect h2{
+        padding: 20px 0px 20px 10px;
+    }
+    .section-connect p, a {
+        padding: 10px 0 10px 10px;
+    }
+    .section-work h2{
+        padding: 20px 0 20px 10px;
+    }
+    .section-work p{
+        padding: 10px 0 10px 10px;
+    }
+    .section-work img{
+        margin: 15px 0 15px 0;
+        width: 100vw;
+    }
+    .section-speed img {
+        width: 100vw;
+    }
+    .section-speed h2{
+        padding: 20px 0 20px 10px;
+    }
+    .section-speed p,a {
+        padding: 10px 0 10px 10px;
+    }
+    .section-teams h3{
+        margin: 20px 0 15px 0;
+        padding: 30px 10px 10px 10px;
+    }
+    .section-teams button{
+        width: 95vw;
+        padding: 20px;
+        margin: 5px 0;
+        font-size: 18px;
+        letter-spacing: 0.01cm;
+    }
+    .list-numbers{
+        margin: 0 0 30px 0;
+    }
+    .section-hq{
+        text-align: center;
+        padding: 30px 10px 30px 10px;
+    }
+    .section-hq h3{
+        padding: 20px;
+        font-size: 30px;
+    }
+    .section-hq button {
+        width: 95vw;
+        padding: 15px;
+        margin: 10px 0;
+        font-size: 18px;
+        letter-spacing: 0.01cm;
+    }
+    .footer-logo{
+        width: 12vw;
+        margin: 20px;
+    }
+    .list-table{
+        display: flex;
+    }
+    .list-top{
+        margin: 20px 5px 20px 5px;
+    }
+    .list-members{
+        margin: 20px 5px 20px 5px;
+    }
+    .list-menu {
+        margin: 30px 5px 30px 5px;
+        padding: 10px;
+
+    }
+    .list-menu_item{
+        font-size: 12px;
+        margin: 20px 0;
+    }
+}
